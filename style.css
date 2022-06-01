@@ -1,9 +1,12 @@
 *{
-	margin: 0 auto;
-	padding: 0 auto;
+	margin: 0;
+	padding: 0;
 }
 body{
 	font-family: 'Lato', sans-serif;
+}
+
+a {text-decoration: none;
 }
 
 .center{
@@ -13,6 +16,30 @@ body{
 }
 
 .header{
+	min-height: 75px;
 	background-color: #222222;
 	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header_left{
+	display: flex;
+	gap: 41px;
+}
+
+.header_right{
+	display: flex;
+	gap: 33px;
+}
+.top_content{
+	background-color:  #F1E4E6;
+}
+.top_content_left{
+	min-height: 764px;
+	width: 50%;
+	background-image: url(img/content_left.png);
+	background-repeat: no-repeat;
 }
