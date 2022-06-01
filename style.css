@@ -2,3 +2,17 @@
 	margin: 0 auto;
 	padding: 0 auto;
 }
+body{
+	font-family: 'Lato', sans-serif;
+}
+
+.center{
+	padding-left: calc(50% - 570px);
+	padding-right: calc(50% - 570px);
+
+}
+
+.header{
+	background-color: #222222;
+	display: flex;
+}
