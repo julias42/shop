@@ -1,24 +1,27 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 }
-body{
+
+body {
 	font-family: 'Lato', sans-serif;
 }
 
-a {text-decoration: none;
+a {
+	text-decoration: none;
 }
 
-img{
+img {
 	max-width: 100%;
 }
-.center{
+
+.center {
 	padding-left: calc(50% - 570px);
 	padding-right: calc(50% - 570px);
 
 }
 
-.header{
+.header {
 	min-height: 75px;
 	background-color: #222222;
 	display: flex;
@@ -28,55 +31,124 @@ img{
 	align-items: center;
 }
 
-.header_left{
+.header_left {
 	display: flex;
 	gap: 41px;
 }
 
-.header_right{
+.header_right {
 	display: flex;
 	gap: 33px;
 }
-.top_content{
-	background-color:  #F1E4E6;
+
+.top_content {
+	background-color: #F1E4E6;
 	padding-left: calc(50% - 800px);
 	padding-right: calc(50% - 800px);
 	display: flex;
 }
-.top_content_left{
+
+.top_content_left {
 	width: 50%;
 }
-.top_content_right{
+
+.top_content_right {
 	padding-left: 64px;
 }
 
-.top_content_zag{
+.top_content_zag {
 	border-left: 12px solid #F16D7F;
 	padding-left: 16px;
 	margin-top: 48%;
 }
-.top_content_title{
+
+.top_content_title {
 	font-style: normal;
 	font-weight: 900;
 	font-size: 48px;
 	line-height: 58px;
 	color: #222222;
 }
-.top_content_heading{
+
+.top_content_heading {
 	font-style: normal;
 	font-weight: 700;
 	font-size: 32px;
 	line-height: 38px;
 	color: #222222;
 }
-.sale{
+
+.sale {
 	display: grid;
 	gap: 30px;
 	grid-template-columns: repeat(3, 1fr);
 	margin-top: 64px;
+	margin-bottom: 96px;
 }
-.sale_item{
+
+.sale_item {
 	min-height: 260px;
-	background-image: url(img/sale1.png);
-	background-repeat: no-repeat;
+	position: relative;
+}
+
+.sale_item_big {
+	min-height: 180px;
+	position: relative;
+	grid-column: 1 / -1
+}
+
+.sale_content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.sale_text {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.sale_heading {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	color: #F16D7F;
+}
+
+.featured_items {
+	text-align: center;
+}
+
+.featured {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 36px;
+}
+
+.shop_for {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	padding-bottom: 48px;
+}
+
+.items_card {
+	min-width: 360px;
+	gap: 30px;
+	display: grid;
+	grid-template-columns: repeat(3, 2fr);
 }
