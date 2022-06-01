@@ -69,3 +69,14 @@ img{
 	line-height: 38px;
 	color: #222222;
 }
+.sale{
+	display: grid;
+	gap: 30px;
+	grid-template-columns: repeat(3, 1fr);
+	margin-top: 64px;
+}
+.sale_item{
+	min-height: 260px;
+	background-image: url(img/sale1.png);
+	background-repeat: no-repeat;
+}
