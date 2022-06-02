@@ -189,7 +189,9 @@ img {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 17px;
-	padding-bottom: 48px;
+	color: #9F9F9F;
+	margin-bottom: 48px;
+
 }
 .items_card{
 	background: #F8F8F8;
@@ -274,7 +276,39 @@ img {
 	align-content: center;
 	max-width: 557px;
 	max-height: 142px;
-
+}
+.center_footer_content_zag2{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 167.2%;
+	text-align: center;
+}
+.input_icon{
+	border: none;
+	background: url(img/input.icon.png) no-repeat;
+	padding: 22px 7px 64px ;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	display: flex;
+	align-items: center;
+	color: #222224;
+	opacity: 0.67;
+}
+.subscribe_button{
+	background-image: url(img/subscribe.png);
+	background-repeat: no-repeat;
+	padding: 7px 17px;
+	font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
 }
 .footer_bottom{
 	min-height: 80px;
