@@ -154,6 +154,7 @@ img {
 	color: #5D5D5D;
 	margin-bottom: 16px;
 }
+<<<<<<< Updated upstream
 
 .featured_card_price {
 	font-style: normal;
@@ -183,5 +184,14 @@ img {
 	background: #F8F8F8;
 	min-height: 581px;
 	text-align: left;
+=======
+.sale_item{
+	min-height: 260px;
+	background-image: url(img/sale1.png);
+	background-repeat: no-repeat;
+}
+.sale_item_big{
+	grid-auto-columns: ;
+>>>>>>> Stashed changes
 
 }
