@@ -256,8 +256,9 @@ img {
 	grid-template-columns: repeat(2, 1fr);
 	align-content: center;
 	min-height: 448px;
-	background-image: url(img/center_footer_background.jpg);
+	background-image: url(img/center_footer_background.png);
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .center_footer_content_left {
@@ -343,6 +344,7 @@ img {
 .footer_bottom {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	min-height: 80px;
 	background: #222224;
 }
@@ -357,15 +359,8 @@ img {
 }
 
 .links {
-	display: flex;
-}
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 7px;
 
-.facebook {
-	background-image: url(img/facebook.png);
-	background-repeat: no-repeat;
-}
-
-.instagram {
-	background-image: url(img/instagram.png);
-	background-repeat: no-repeat;
 }
