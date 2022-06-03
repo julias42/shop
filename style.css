@@ -203,6 +203,13 @@ img {
 	background: #F7E4E2
 }
 
+.img_hover{	
+	height: 420px;
+}
+
+.img_hover:hover{	
+}
+
 .browse_but {
 	display: flex;
 	justify-content: center;
@@ -371,5 +378,4 @@ img {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 7px;
-
 }
