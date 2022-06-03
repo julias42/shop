@@ -139,7 +139,7 @@ img {
 .featured_items {
 	display: grid;
 	gap: 30px;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(auto-fit, 360px);
 }
 
 .featured_items_zag {
@@ -203,11 +203,12 @@ img {
 	background: #F7E4E2
 }
 
-.img_hover{	
+.img_hover {
 	height: 420px;
 }
 
-.img_hover:hover{	
+.image_card:hover {
+	filter: brightness(0.2);
 }
 
 .browse_but {
@@ -222,7 +223,7 @@ img {
 	margin-top: 48px;
 }
 
-.browse_button:hover{
+.browse_button:hover {
 	background-color: #F26376;
 	font-style: normal;
 	font-weight: 400;
