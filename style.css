@@ -191,14 +191,13 @@ img {
 	line-height: 17px;
 	color: #9F9F9F;
 	margin-bottom: 48px;
-
 }
 
 .items_card {
 	background: #F8F8F8;
 }
 
-.image_card_center {
+.image_card {
 	min-height: 420px;
 	text-align: center;
 	background: #F7E4E2
@@ -214,6 +213,16 @@ img {
 	border: 1px solid #FF6A6A;
 	padding: 15px 39px;
 	margin-top: 48px;
+}
+
+.browse_button:hover{
+	background-color: #F26376;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: #FFFFFF;
+
 }
 
 .top_footer {
@@ -258,7 +267,7 @@ img {
 	min-height: 448px;
 	background-image: url(img/center_footer_background.png);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
 }
 
 .center_footer_content_left {
