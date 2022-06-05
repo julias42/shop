@@ -13,7 +13,6 @@ a {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 19px;
-
 	color: #F26376;
 }
 
@@ -142,15 +141,22 @@ img {
 	grid-template-columns: repeat(auto-fit, 360px);
 }
 
+.button_cart {
+	position: relative;
+	display: none;
+}
+
 .featured_items_zag {
 	text-align: center;
 }
 
 .featured_card_zag {
+	display: block;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 13px;
 	line-height: 16px;
+	color: #000000;
 	margin-top: 25px;
 	margin-bottom: 16px;
 	padding-left: 16px;
@@ -194,6 +200,7 @@ img {
 }
 
 .items_card {
+	position: relative;
 	background: #F8F8F8;
 }
 
@@ -207,8 +214,34 @@ img {
 	height: 420px;
 }
 
-.image_card:hover {
-	filter: brightness(0.2);
+.items_card:hover .image_card {
+	filter: brightness(0.3);
+}
+
+.items_card:hover .add_cart {
+	display: flex;
+}
+
+.add_cart:hover {
+	box-shadow: 0 0 3px #fff;
+}
+
+.add_cart {
+	position: absolute;
+	top: 188px;
+	left: 111px;
+	width: 139px;
+	height: 44px;
+	gap: 11px;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #fff;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #fff;
 }
 
 .browse_but {
