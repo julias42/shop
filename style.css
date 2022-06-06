@@ -408,8 +408,24 @@ img {
 	color: #FBFBFB;
 }
 
-.links {
+.links_box {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 7px;
 }
+.link{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 32px;
+	height: 32px;
+	background-color: #fff;
+}
+.link:hover{
+	background-color: #F26376;
+	fill: white;
+}
+.link:hover path{
+	fill: white;
+}
+
