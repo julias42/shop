@@ -429,3 +429,21 @@ img {
 	fill: white;
 }
 
+/*Страница Contacts*/
+
+.arrivals{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 148px;
+	background: #F8F3F4;
+	margin-bottom: 132px;
+}
+
+.new_arr{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29px;
+	color: #F16D7F;
+}
