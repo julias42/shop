@@ -47,7 +47,65 @@ img {
 
 .header_right {
 	display: flex;
+	justify-content:space-between;
 	gap: 33px;
+}
+
+.checkbox{
+	display: block;
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	z-index: 3;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.menu_btn span{
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background-color: #fff;
+	transform: translate(-50%, -50%);
+	transition: all 0.5s;
+}
+
+.menu-items{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+	background: #FFFFFF;
+	transform: translateX(100%);
+	transition: transform 0.5s;
+}
+
+.checkbox:checked~.menu-items{
+	transform: translateX(80%);
+}
+
+.menu_btn{
+	width:30px;
+	height: 30px;
+	position: relative;
+	z-index: 2;
+	overflow:hidden;
+}
+
+.menu_btn span:nth-of-type(2){
+	top: calc(50% - 5px);
+}
+
+.menu_btn span:ntn-of-type(3){
+	top: calc(50% - 5px);
+}
+
+.menu-items li {
+	list-style-type: none;
 }
 
 .top_content {
