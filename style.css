@@ -50,16 +50,53 @@ img {
 
 .header_right {
 	display: flex;
-	justify-content:space-between;
+	justify-content: space-between;
 	gap: 33px;
 }
 
-.menu_btn{
-	width:30px;
+.menu_btn {
+	display: flex;
+	top: 14px;
+	left: 0;
+	width: 30px;
 	height: 30px;
 	position: relative;
 	z-index: 2;
-	overflow:hidden;
+}
+
+.menu_btn>span,
+.menu_btn>span::before,
+.menu_btn>span::after {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+	transition-duration: .25s;
+}
+
+.menu_btn>span::before {
+	content: '';
+	top: -8px;
+}
+
+.menu_btn>span::after {
+	content: '';
+	top: 8px;
+}
+
+.checkbox:checked~.menu_btn>span {
+	transform: rotate(45deg);
+}
+
+.checkbox:checked~.menu_btn>span::before {
+	top: 0;
+	transform: rotate(0);
+}
+
+.checkbox:checked~.menu_btn>span::after {
+	top: 0;
+	transform: rotate(90deg);
 }
 
 .menu li {
@@ -73,7 +110,8 @@ img {
 	margin-bottom: 11px;
 	padding-left: 22px;
 }
-.menu_text{
+
+.menu_text {
 	font-style: normal;
 	font-weight: 700;
 	font-size: 14px;
@@ -82,7 +120,7 @@ img {
 	margin-bottom: 24px;
 }
 
-.menu{
+.menu {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -98,7 +136,7 @@ img {
 	z-index: 1;
 }
 
-.checkbox{
+.checkbox {
 	display: block;
 	position: absolute;
 	height: 30px;
@@ -108,7 +146,7 @@ img {
 	cursor: pointer;
 }
 
-.checkbox:checked ~ .menu{
+.checkbox:checked~.menu {
 	transform: translate(85%);
 }
 
@@ -452,17 +490,18 @@ img {
 	color: #FFFFFF;
 	width: 100px;
 	-webkit-transition: all .3s ease-out;
-    -moz-transition: all .3s ease-out;
-    -ms-transition: all .3s ease-out;
-    -o-transition: all .3s ease-out;
-    transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
 }
-.subscribe_button:hover{
-	-webkit-transform: translate(0px,-10px);
-    -moz-transform: translate(0px,-10px);
-    -ms-transform: translate(0px,-10px);
-    -o-transform: translate(0px,-10px);
-    transform: translate(0px,-10px);
+
+.subscribe_button:hover {
+	-webkit-transform: translate(0px, -10px);
+	-moz-transform: translate(0px, -10px);
+	-ms-transform: translate(0px, -10px);
+	-o-transform: translate(0px, -10px);
+	transform: translate(0px, -10px);
 }
 
 .footer_bottom {
@@ -487,7 +526,8 @@ img {
 	grid-template-columns: repeat(4, 1fr);
 	gap: 7px;
 }
-.link{
+
+.link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -495,17 +535,19 @@ img {
 	height: 32px;
 	background-color: #fff;
 }
-.link:hover{
+
+.link:hover {
 	background-color: #F26376;
 	fill: white;
 }
-.link:hover path{
+
+.link:hover path {
 	fill: white;
 }
 
 /*Страница Catalog*/
 
-.arrivals{
+.arrivals {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -514,16 +556,17 @@ img {
 	margin-bottom: 132px;
 }
 
-.new_arr{
+.new_arr {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 29px;
 	color: #F16D7F;
 }
+
 /*Страница Registration*/
 
-.registration{
+.registration {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -532,7 +575,7 @@ img {
 	margin-bottom: 132px;
 }
 
-.reg{
+.reg {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 24px;
@@ -540,19 +583,19 @@ img {
 	color: #F16D7F;
 }
 
-.main_form{
+.main_form {
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
 }
 
-.form{
+.form {
 	display: flex;
 	flex-direction: column;
 	max-width: 360px;
 }
 
-.label_text{
+.label_text {
 	width: 360px;
 	height: 45px;
 	margin-bottom: 20px;
@@ -560,7 +603,7 @@ img {
 	padding-left: 17px;
 }
 
-.text_form{
+.text_form {
 	font-style: normal;
 	font-weight: 300;
 	font-size: 16px;
@@ -568,7 +611,8 @@ img {
 	color: #222222;
 	margin-bottom: 20px;
 }
-.label_text::placeholder{
+
+.label_text::placeholder {
 	font-style: normal;
 	font-weight: 300;
 	font-size: 13px;
@@ -576,22 +620,24 @@ img {
 	color: #B1B1B1;
 }
 
-.radio_box{
+.radio_box {
 	display: flex;
 	margin-top: 32px;
 	margin-bottom: 35px;
 
 }
-.gender{
+
+.gender {
 	font-style: normal;
 	font-weight: 300;
 	font-size: 11px;
 	line-height: 13px;
 	color: #000000;
-	margin-left:10px;
+	margin-left: 10px;
 	margin-right: 20px;
 }
-.form_info{
+
+.form_info {
 	display: flex;
 	flex-direction: column;
 	font-style: normal;
@@ -601,7 +647,8 @@ img {
 	color: #B1B1B1;
 	max-width: 652px;
 }
-.join_but{
+
+.join_but {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -614,20 +661,22 @@ img {
 	color: #FFFFFF;
 	width: 167px;
 	height: 50px;
-    -webkit-transition: all .3s ease-out;
-    -moz-transition: all .3s ease-out;
-    -ms-transition: all .3s ease-out;
-    -o-transition: all .3s ease-out;
-    transition: all .3s ease-out;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
 }
-.join_but:hover{
-	-webkit-transform: translate(0px,-10px);
-    -moz-transform: translate(0px,-10px);
-    -ms-transform: translate(0px,-10px);
-    -o-transform: translate(0px,-10px);
-    transform: translate(0px,-10px);
+
+.join_but:hover {
+	-webkit-transform: translate(0px, -10px);
+	-moz-transform: translate(0px, -10px);
+	-ms-transform: translate(0px, -10px);
+	-o-transform: translate(0px, -10px);
+	transform: translate(0px, -10px);
 }
-.info_zag{
+
+.info_zag {
 	font-style: normal;
 	font-weight: 300;
 	font-size: 24px;
@@ -635,7 +684,8 @@ img {
 	color: #000000;
 	margin-bottom: 22px;
 }
-.info_text{
+
+.info_text {
 	font-style: normal;
 	font-weight: 300;
 	font-size: 24px;
