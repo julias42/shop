@@ -549,6 +549,7 @@ img {
 
 .link:hover path {
     fill: white;
+}
 
 /*Страница Catalog*/
 
@@ -558,7 +559,7 @@ img {
     justify-content: space-between;
     min-height: 148px;
     background: #F8F3F4;
-    margin-bottom: 132px;
+    margin-bottom: 51px;
 }
 
 .new_arr {
@@ -567,6 +568,40 @@ img {
     font-size: 24px;
     line-height: 29px;
     color: #F16D7F;
+}
+
+.filter_box {
+    display: none;
+    position: relative;
+    justify-content: space-between;
+    margin-bottom: 64px;
+    background: #FFFFFF;
+    box-shadow: 11px 1px 25px;
+    z-index: 99;
+}
+
+summary::before {}
+
+.filter_check {
+    display: block;
+    position: absolute;
+    height: 15px;
+    width: 20px;
+    z-index: 3;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.filter_check:checked~.filter {
+    transform: translateY(15%);
+}
+
+.filter_check:checked~.filter_box {
+    display: flex;
+}
+
+.filter_box li {
+    list-style-type: none;
 }
 
 /*Страница Registration*/
@@ -597,7 +632,7 @@ img {
 .form {
     display: flex;
     flex-direction: column;
-    max-width: 360px; 
+    max-width: 360px;
 }
 
 .label_text {
@@ -606,7 +641,7 @@ img {
     margin-bottom: 20px;
     border: 1px solid #A4A4A4;
     padding-left: 17px;
-    outline:none;
+    outline: none;
 }
 
 .text_form {
@@ -715,33 +750,4 @@ img {
     .top_footer {
         margin-top: 65px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
