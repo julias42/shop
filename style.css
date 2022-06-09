@@ -319,6 +319,7 @@ img {
   gap: 30px;
   -ms-grid-columns: (360px)[auto-fit];
       grid-template-columns: repeat(auto-fit, 360px);
+  margin-top: 64px;
 }
 
 .button_cart {
@@ -739,18 +740,24 @@ img {
   color: #636363;
 }
 
-details summary::-webkit-details-marker {
-  display: none;
+summary {
+  display: block;
+}
+
+.navbar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
 }
 
 .filter_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 310px;
   position: relative;
   cursor: pointer;
-  margin-bottom: 64px;
 }
 
 .filter_box .main_s {
@@ -775,7 +782,7 @@ details summary::-webkit-details-marker {
   background-color: #fff;
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-  min-height: 531px;
+  min-height: 190px;
   min-width: 360px;
   z-index: 2;
 }
@@ -818,6 +825,9 @@ details[open] {
 }
 
 .filter_but {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -829,19 +839,64 @@ details[open] {
   outline: none;
 }
 
-.filter_box_right {
+.filter_box_center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
-.filter_box_right summary {
+.filter_box_trending {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: #6f6e6e;
-  outline: none;
+  color: #6F6E6E;
+}
+
+.filter_box_size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+.filter_box_size .filter_box_size_content {
+  position: absolute;
+  top: 3px;
+  z-index: 2;
+  right: 140px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.filter_box_size li {
+  list-style-type: none;
+  margin: 5px;
+}
+
+.filter_box_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+.filter_box_price_content {
+  position: absolute;
+  right: 65px;
 }
 
 /*Страница Registration*/
