@@ -560,7 +560,6 @@ img {
     justify-content: space-between;
     min-height: 148px;
     background: #f8f3f4;
-    margin-bottom: 51px;
 }
 
 .new_arr {
@@ -620,6 +619,7 @@ summary::-webkit-details-marker {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
+    margin-top: 51px;
 }
 
 .filter_box {
@@ -1151,6 +1151,24 @@ summary::-webkit-details-marker {
     left: 43px;
     display: flex;
     min-width: 273px;
+}
+
+/*Страница продукты*/
+.product_items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 128px;
+}
+
+.product_image {
+    min-height: 777px;
+    background: #F7F7F7;
+}
+
+.product_image_info {
+    min-height: 601px;
+    background: #FFFFFF;
 }
 
 /*Медиа-запросы*/
