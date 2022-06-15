@@ -1,3 +1,61 @@
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade-in-bck {
+    0% {
+        -webkit-transform: translateZ(80px);
+        transform: translateZ(80px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-bck {
+    0% {
+        -webkit-transform: translateZ(80px);
+        transform: translateZ(80px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -63,9 +121,9 @@ img {
     z-index: 2;
 }
 
-.menu_btn > span,
-.menu_btn > span::before,
-.menu_btn > span::after {
+.menu_btn>span,
+.menu_btn>span::before,
+.menu_btn>span::after {
     display: block;
     position: absolute;
     width: 100%;
@@ -74,26 +132,26 @@ img {
     transition-duration: 0.25s;
 }
 
-.menu_btn > span::before {
+.menu_btn>span::before {
     content: "";
     top: -8px;
 }
 
-.menu_btn > span::after {
+.menu_btn>span::after {
     content: "";
     top: 8px;
 }
 
-.checkbox:checked ~ .menu_btn > span {
+.checkbox:checked~.menu_btn>span {
     transform: rotate(45deg);
 }
 
-.checkbox:checked ~ .menu_btn > span::before {
+.checkbox:checked~.menu_btn>span::before {
     top: 0;
     transform: rotate(0);
 }
 
-.checkbox:checked ~ .menu_btn > span::after {
+.checkbox:checked~.menu_btn>span::after {
     top: 0;
     transform: rotate(90deg);
 }
@@ -154,7 +212,7 @@ img {
     cursor: pointer;
 }
 
-.checkbox:checked ~ .menu {
+.checkbox:checked~.menu {
     transform: translate(80%);
 }
 
@@ -177,6 +235,7 @@ img {
     border-left: 12px solid #f16d7f;
     padding-left: 16px;
     margin-top: 48%;
+    animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
 .top_content_title {
@@ -201,6 +260,14 @@ img {
     grid-template-columns: repeat(3, 1fr);
     margin-top: 64px;
     margin-bottom: 96px;
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.sale.element-show {
+    opacity: 1;
+    transition: all 1s;
+    transform: translateY(0%);
 }
 
 .sale_item {
@@ -315,6 +382,7 @@ img {
     min-height: 420px;
     text-align: center;
     background: #f7e4e2;
+
 }
 
 .img_hover {
@@ -323,6 +391,8 @@ img {
 
 .items_card:hover .image_card {
     filter: brightness(0.3);
+    transition: all .5s;
+
 }
 
 .items_card:hover .add_cart {
@@ -370,6 +440,7 @@ img {
     font-size: 16px;
     line-height: 19px;
     color: #ffffff;
+    transition: all .5s;
 }
 
 .top_footer {
@@ -605,6 +676,7 @@ img {
 
 .breadcrumb a:hover {
     color: #f16d7f;
+    transition: all .5s;
 }
 
 summary {
@@ -1168,6 +1240,10 @@ summary::-webkit-details-marker {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .slider_img {
+        animation: fade-in-bck 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
 }
 
 .arrow_left {
@@ -1181,8 +1257,10 @@ summary::-webkit-details-marker {
     height: 47px;
     background: rgba(42, 42, 42, 0.15);
     cursor: pointer;
+
     :hover {
         fill: #ef5b70;
+        transition: all .5s;
     }
 }
 
@@ -1197,8 +1275,10 @@ summary::-webkit-details-marker {
     height: 47px;
     background: rgba(42, 42, 42, 0.15);
     cursor: pointer;
+
     :hover {
         fill: #ef5b70;
+        transition: all .5s;
     }
 }
 
@@ -1215,6 +1295,9 @@ summary::-webkit-details-marker {
     position: relative;
     z-index: 2;
     margin-bottom: 130px;
+    opacity: 0;
+    transform: translateY(100%);
+
     .woman {
         font-style: normal;
         font-weight: 300;
@@ -1222,6 +1305,7 @@ summary::-webkit-details-marker {
         line-height: 17px;
         color: #f16d7f;
     }
+
     .product_info_line {
         background: #ef5b70;
         height: 3px;
@@ -1230,6 +1314,7 @@ summary::-webkit-details-marker {
         margin-top: 12px;
         margin-bottom: 12px;
     }
+
     .moschino {
         font-style: normal;
         font-weight: 300;
@@ -1237,6 +1322,7 @@ summary::-webkit-details-marker {
         line-height: 22px;
         color: #4d4d4d;
     }
+
     .product_info_text {
         font-style: normal;
         font-weight: 300;
@@ -1247,6 +1333,7 @@ summary::-webkit-details-marker {
         max-width: 555px;
         margin-top: 48px;
     }
+
     .product_info_text_price {
         font-style: normal;
         font-weight: 300;
@@ -1255,12 +1342,14 @@ summary::-webkit-details-marker {
         color: #ef5b70;
         margin-top: 33px;
     }
+
     .product_info_line_big {
         width: 641px;
         border: 1px solid #eaeaea;
         margin-top: 65px;
         margin-bottom: 65px;
     }
+
     .add_to_cart {
         display: flex;
         justify-content: center;
@@ -1278,13 +1367,21 @@ summary::-webkit-details-marker {
         gap: 22px;
         transition: all 0.3s;
     }
+
     .add_to_cart:hover {
         background: #f26376;
         color: #fff;
     }
+
     .add_to_cart:hover path {
         fill: white;
     }
+}
+
+.product_info.element-show {
+    opacity: 1;
+    transition: 1.5s;
+    transform: translateY(0%);
 }
 
 /*Медиа-запросы*/
