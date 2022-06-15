@@ -1276,6 +1276,14 @@ summary::-webkit-details-marker {
         color: #f26376;
         margin-top: 64px;
         gap: 22px;
+        transition: all 0.3s;
+    }
+    .add_to_cart:hover {
+        background: #f26376;
+        color: #fff;
+    }
+    .add_to_cart:hover path {
+        fill: white;
     }
 }
 

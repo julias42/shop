@@ -1579,6 +1579,17 @@ summary::-webkit-details-marker {
   color: #f26376;
   margin-top: 64px;
   gap: 22px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.product_info .add_to_cart:hover {
+  background: #f26376;
+  color: #fff;
+}
+
+.product_info .add_to_cart:hover path {
+  fill: white;
 }
 
 /*Медиа-запросы*/
