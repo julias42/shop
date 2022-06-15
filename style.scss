@@ -63,9 +63,9 @@ img {
     z-index: 2;
 }
 
-.menu_btn>span,
-.menu_btn>span::before,
-.menu_btn>span::after {
+.menu_btn > span,
+.menu_btn > span::before,
+.menu_btn > span::after {
     display: block;
     position: absolute;
     width: 100%;
@@ -74,26 +74,26 @@ img {
     transition-duration: 0.25s;
 }
 
-.menu_btn>span::before {
+.menu_btn > span::before {
     content: "";
     top: -8px;
 }
 
-.menu_btn>span::after {
+.menu_btn > span::after {
     content: "";
     top: 8px;
 }
 
-.checkbox:checked~.menu_btn>span {
+.checkbox:checked ~ .menu_btn > span {
     transform: rotate(45deg);
 }
 
-.checkbox:checked~.menu_btn>span::before {
+.checkbox:checked ~ .menu_btn > span::before {
     top: 0;
     transform: rotate(0);
 }
 
-.checkbox:checked~.menu_btn>span::after {
+.checkbox:checked ~ .menu_btn > span::after {
     top: 0;
     transform: rotate(90deg);
 }
@@ -154,7 +154,7 @@ img {
     cursor: pointer;
 }
 
-.checkbox:checked~.menu {
+.checkbox:checked ~ .menu {
     transform: translate(80%);
 }
 
@@ -1000,7 +1000,7 @@ summary::-webkit-details-marker {
 .cart_text li:last-child {
     display: flex;
     align-items: center;
-    gap: 24px
+    gap: 24px;
 }
 
 .mango {
@@ -1120,7 +1120,7 @@ summary::-webkit-details-marker {
     font-weight: 400;
     font-size: 11px;
     line-height: 13px;
-    color: #4A4A4A;
+    color: #4a4a4a;
     margin-bottom: 12px;
 }
 
@@ -1161,14 +1161,121 @@ summary::-webkit-details-marker {
     margin-bottom: 128px;
 }
 
-.product_image {
+.slider {
     min-height: 777px;
-    background: #F7F7F7;
+    background: #f7f7f7;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.product_image_info {
-    min-height: 601px;
-    background: #FFFFFF;
+.arrow_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 365px;
+    left: 0;
+    width: 47px;
+    height: 47px;
+    background: rgba(42, 42, 42, 0.15);
+    cursor: pointer;
+    :hover {
+        fill: #ef5b70;
+    }
+}
+
+.arrow_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 365px;
+    right: 0;
+    width: 47px;
+    height: 47px;
+    background: rgba(42, 42, 42, 0.15);
+    cursor: pointer;
+    :hover {
+        fill: #ef5b70;
+    }
+}
+
+.product_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1140px;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    margin: -65px auto 0;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 130px;
+    .woman {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #f16d7f;
+    }
+    .product_info_line {
+        background: #ef5b70;
+        height: 3px;
+        width: 63px;
+        border: none;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .moschino {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #4d4d4d;
+    }
+    .product_info_text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #5e5e5e;
+        max-width: 555px;
+        margin-top: 48px;
+    }
+    .product_info_text_price {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #ef5b70;
+        margin-top: 33px;
+    }
+    .product_info_line_big {
+        width: 641px;
+        border: 1px solid #eaeaea;
+        margin-top: 65px;
+        margin-bottom: 65px;
+    }
+    .add_to_cart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 211px;
+        height: 47px;
+        border: 1px solid #ff6a6a;
+        background: #ffffff;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #f26376;
+        margin-top: 64px;
+    }
 }
 
 /*Медиа-запросы*/
