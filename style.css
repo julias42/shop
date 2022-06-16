@@ -1283,9 +1283,15 @@ summary::-webkit-details-marker {
   transform: scale(1.05);
 }
 
+.cart_link {
+  display: block;
+  height: 100%;
+}
+
 .cart_text {
   margin-left: 31px;
   margin-top: 22px;
+  padding-bottom: 62px;
 }
 
 .cart_close_btn {
@@ -1327,6 +1333,7 @@ summary::-webkit-details-marker {
 }
 
 .mango {
+  display: block;
   max-width: 200px;
   font-style: normal;
   font-weight: 400;
