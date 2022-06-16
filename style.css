@@ -110,7 +110,53 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   gap: 41px;
+}
+
+.search[type="text"] {
+  height: 30px;
+  font-size: 18px;
+  display: inline-block;
+  font-weight: 50;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 3px;
+  padding-left: 40px;
+  width: 0;
+  position: absolute;
+  top: 5px;
+  left: 70px;
+  background: none;
+  z-index: 2;
+  -webkit-transition: width 0.4s cubic-bezier(0, 0.795, 0, 1);
+  transition: width 0.4s cubic-bezier(0, 0.795, 0, 1);
+  cursor: pointer;
+}
+
+.search[type="text"]:focus {
+  width: 200px;
+  z-index: 1;
+  cursor: text;
+}
+
+.search_submit[type="submit"] {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  color: red;
+  background: url(img/search.svg) center center no-repeat;
+  text-indent: -1000px;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 8px;
+  left: 70px;
+  z-index: 1;
+  cursor: pointer;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
 }
 
 .header_right {
@@ -193,6 +239,8 @@ img {
 
 .menu_link:hover {
   color: #f16d7f;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .menu_text {
@@ -441,8 +489,8 @@ img {
 .items_card:hover .image_card {
   -webkit-filter: brightness(0.3);
           filter: brightness(0.3);
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .items_card:hover .add_cart {
@@ -501,8 +549,8 @@ img {
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .top_footer {
@@ -665,8 +713,8 @@ img {
 }
 
 .subscribe_button:hover {
-  -webkit-transform: translate(0px, -10px);
-  transform: translate(0px, -10px);
+  -webkit-transform: translate(10px, 0px);
+          transform: translate(10px, 0px);
 }
 
 .footer_bottom {
@@ -786,8 +834,8 @@ img {
 
 .breadcrumb a:hover {
   color: #f16d7f;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 summary {
@@ -1535,8 +1583,8 @@ summary::-webkit-details-marker {
 
 .arrow_left :hover {
   fill: #ef5b70;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .arrow_right {
@@ -1560,8 +1608,8 @@ summary::-webkit-details-marker {
 
 .arrow_right :hover {
   fill: #ef5b70;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .product_info {

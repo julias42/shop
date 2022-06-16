@@ -102,7 +102,51 @@ img {
 
 .header_left {
     display: flex;
+    position: relative;
     gap: 41px;
+}
+
+.search[type="text"] {
+    height: 30px;
+    font-size: 18px;
+    display: inline-block;
+    font-weight: 50;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 3px;
+    padding-left: 40px;
+    width: 0;
+    position: absolute;
+    top: 5px;
+    left: 70px;
+    background: none;
+    z-index: 2;
+    transition: width 0.4s cubic-bezier(0, 0.795, 0, 1);
+    cursor: pointer;
+}
+
+.search[type="text"]:focus {
+    width: 200px;
+    z-index: 1;
+    cursor: text;
+}
+
+.search_submit[type="submit"] {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    color: red;
+    background: url(img/search.svg) center center no-repeat;
+    text-indent: -1000px;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 8px;
+    left: 70px;
+    z-index: 1;
+    cursor: pointer;
+    transition: opacity 0.4s ease;
 }
 
 .header_right {
@@ -121,9 +165,9 @@ img {
     z-index: 2;
 }
 
-.menu_btn>span,
-.menu_btn>span::before,
-.menu_btn>span::after {
+.menu_btn > span,
+.menu_btn > span::before,
+.menu_btn > span::after {
     display: block;
     position: absolute;
     width: 100%;
@@ -132,26 +176,26 @@ img {
     transition-duration: 0.25s;
 }
 
-.menu_btn>span::before {
+.menu_btn > span::before {
     content: "";
     top: -8px;
 }
 
-.menu_btn>span::after {
+.menu_btn > span::after {
     content: "";
     top: 8px;
 }
 
-.checkbox:checked~.menu_btn>span {
+.checkbox:checked ~ .menu_btn > span {
     transform: rotate(45deg);
 }
 
-.checkbox:checked~.menu_btn>span::before {
+.checkbox:checked ~ .menu_btn > span::before {
     top: 0;
     transform: rotate(0);
 }
 
-.checkbox:checked~.menu_btn>span::after {
+.checkbox:checked ~ .menu_btn > span::after {
     top: 0;
     transform: rotate(90deg);
 }
@@ -175,6 +219,7 @@ img {
 
 .menu_link:hover {
     color: #f16d7f;
+    transition: all 0.5s;
 }
 
 .menu_text {
@@ -212,7 +257,7 @@ img {
     cursor: pointer;
 }
 
-.checkbox:checked~.menu {
+.checkbox:checked ~ .menu {
     transform: translate(80%);
 }
 
@@ -235,7 +280,7 @@ img {
     border-left: 12px solid #f16d7f;
     padding-left: 16px;
     margin-top: 48%;
-    animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
 .top_content_title {
@@ -382,7 +427,6 @@ img {
     min-height: 420px;
     text-align: center;
     background: #f7e4e2;
-
 }
 
 .img_hover {
@@ -391,8 +435,7 @@ img {
 
 .items_card:hover .image_card {
     filter: brightness(0.3);
-    transition: all .5s;
-
+    transition: all 0.5s;
 }
 
 .items_card:hover .add_cart {
@@ -440,7 +483,7 @@ img {
     font-size: 16px;
     line-height: 19px;
     color: #ffffff;
-    transition: all .5s;
+    transition: all 0.5s;
 }
 
 .top_footer {
@@ -567,19 +610,11 @@ img {
     line-height: 47px;
     color: #ffffff;
     width: 100px;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
 
 .subscribe_button:hover {
-    -webkit-transform: translate(0px, -10px);
-    -moz-transform: translate(0px, -10px);
-    -ms-transform: translate(0px, -10px);
-    -o-transform: translate(0px, -10px);
-    transform: translate(0px, -10px);
+    transform: translate(10px, 0px);
 }
 
 .footer_bottom {
@@ -676,7 +711,7 @@ img {
 
 .breadcrumb a:hover {
     color: #f16d7f;
-    transition: all .5s;
+    transition: all 0.5s;
 }
 
 summary {
@@ -1242,7 +1277,7 @@ summary::-webkit-details-marker {
     align-items: center;
 
     .slider_img {
-        animation: fade-in-bck 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: fade-in-bck 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     }
 }
 
@@ -1260,7 +1295,7 @@ summary::-webkit-details-marker {
 
     :hover {
         fill: #ef5b70;
-        transition: all .5s;
+        transition: all 0.5s;
     }
 }
 
@@ -1278,7 +1313,7 @@ summary::-webkit-details-marker {
 
     :hover {
         fill: #ef5b70;
-        transition: all .5s;
+        transition: all 0.5s;
     }
 }
 
