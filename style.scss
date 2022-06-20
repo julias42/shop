@@ -236,12 +236,13 @@ img {
     flex-direction: column;
     justify-content: center;
     position: fixed;
+    box-sizing: border-box;
     top: 75px;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 232px;
     padding: 32px;
     background: #ffffff;
-    transform: translate(100%);
+    transform: translate(110%);
     transition: transform 0.5s;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     z-index: 1;
@@ -258,7 +259,7 @@ img {
 }
 
 .checkbox:checked ~ .menu {
-    transform: translate(80%);
+    transform: translate(0%);
 }
 
 .top_content {
@@ -1452,11 +1453,18 @@ input[type="number"]::-webkit-outer-spin-button {
 
 //Index
 @media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 368px);
+        padding-right: calc(50% - 368px);
+    }
+
     .top_content_zag {
-        margin-top: 30%;
+        margin-top: 0;
         width: 311px;
     }
     .top_content_right {
+        display: flex;
+        align-items: center;
         padding-left: 39px;
     }
     .top_content_title {
@@ -1467,21 +1475,18 @@ input[type="number"]::-webkit-outer-spin-button {
         font-size: 24px;
         line-height: 29px;
     }
-    .center {
-        padding-left: calc(50% - 368px);
-        padding-right: calc(50% - 368px);
-    }
 
     .featured_items {
         gap: 16px;
+    }
+    .sale {
+        gap: 20px;
     }
 
     .top_footer {
         margin-top: 65px;
     }
-    .checkbox:checked ~ .menu {
-        transform: translate(60%);
-    }
+
     .top_footer {
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: none;
@@ -1519,10 +1524,10 @@ input[type="number"]::-webkit-outer-spin-button {
         margin-right: 16px;
     }
 }
-@media (max-width: 667px) {
+@media (max-width: 767px) {
     .center {
-        padding-left: calc(50% - 197px);
-        padding-right: calc(50% - 197px);
+        padding-left: calc(50% - 171px);
+        padding-right: calc(50% - 171px);
     }
     .header_right a {
         display: none;
@@ -1530,6 +1535,7 @@ input[type="number"]::-webkit-outer-spin-button {
     .sale {
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: none;
+        justify-content: center;
     }
     .top_content {
         min-height: 375px;
@@ -1545,8 +1551,17 @@ input[type="number"]::-webkit-outer-spin-button {
     .checkbox:checked ~ .menu {
         transform: translate(0%);
     }
+
+    .sale_item {
+        width: 360px;
+        height: 260px;
+    }
+
     .sale_item_big {
         max-width: 360px;
+    }
+    .featured_items {
+        justify-content: center;
     }
 }
 //catalog
