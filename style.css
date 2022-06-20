@@ -1863,6 +1863,12 @@ input[type="number"]::-webkit-outer-spin-button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-transform: none !important;
+            transform: none !important;
+    -webkit-animation: none !important;
+            animation: none !important;
+    -webkit-transition: none !important;
+    transition: none !important;
   }
   .top_content {
     min-height: 375px;
