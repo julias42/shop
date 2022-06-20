@@ -1895,5 +1895,13 @@ input[type="number"]::-webkit-outer-spin-button {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .links_box {
+    display: none;
+  }
+  .footer_bottom {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
