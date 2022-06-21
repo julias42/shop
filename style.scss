@@ -1526,15 +1526,15 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 @media (max-width: 767px) {
     .center {
-        padding-left: calc(50% - 171px);
-        padding-right: calc(50% - 171px);
+        padding-left: calc(50% - 172px);
+        padding-right: calc(50% - 172px);
     }
-    .header_right a {
+
+    .header_link {
         display: none;
     }
     .sale {
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: none;
+        grid-template-columns: repeat(1, 1fr);
         justify-content: center;
         transform: none !important;
         animation: none !important;
@@ -1562,6 +1562,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
     .sale_item_big {
         max-width: 360px;
+        min-height: 111px;
     }
     .featured_items {
         justify-content: center;
