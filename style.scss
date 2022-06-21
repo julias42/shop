@@ -1616,8 +1616,16 @@ input[type="number"]::-webkit-outer-spin-button {
     .filter_box_size {
         margin: 0;
     }
+    .main_s {
+        opacity: 0;
+    }
     .filter_mobile {
+        display: flex;
+        position: absolute;
+        width: 30px;
+        height: 30px;
         background-image: url(img/filter_mobile.svg);
+        background-repeat: no-repeat;
     }
     .filter_box .filter_content {
         min-width: 345px;
