@@ -1266,7 +1266,6 @@ summary::-webkit-details-marker {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 652px;
-  margin-bottom: 40px;
   margin-right: 128px;
 }
 
@@ -1279,7 +1278,7 @@ summary::-webkit-details-marker {
   position: relative;
   min-width: 652px;
   min-height: 306px;
-  margin-bottom: 40px;
+  margin-bottom: 73px;
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   -webkit-transition: all 0.5s ease-out;
@@ -1392,6 +1391,7 @@ input[type="number"]::-webkit-outer-spin-button {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-bottom: 129px;
+  gap: 193px;
 }
 
 .cart_but {
@@ -1862,6 +1862,10 @@ input[type="number"]::-webkit-outer-spin-button {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
+  .product_items {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 767px) {
@@ -1916,6 +1920,7 @@ input[type="number"]::-webkit-outer-spin-button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    gap: 15px;
   }
   .center_footer {
     background-position: 25%;
@@ -1970,6 +1975,58 @@ input[type="number"]::-webkit-outer-spin-button {
   }
   .filter_box .filter_content {
     min-width: 345px;
+  }
+  .product_items {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .slider_img {
+    -webkit-transform: none !important;
+            transform: none !important;
+    -webkit-animation: none !important;
+            animation: none !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+  .product_info {
+    -webkit-transform: none !important;
+            transform: none !important;
+    -webkit-animation: none !important;
+            animation: none !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+    padding: 25px;
+  }
+  .product_info_text {
+    margin-top: 32px;
+  }
+  .filter_box_trending {
+    font-size: 10px;
+    line-height: 12px;
+    width: 113px;
+  }
+  .filter_box_size {
+    font-size: 10px;
+    line-height: 12px;
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 99px;
+  }
+  .filter_box_price {
+    font-size: 10px;
+    line-height: 12px;
+    width: 100px;
+  }
+  .product_info .product_info_line_big {
+    width: 175px;
+    margin-top: 32px;
+    margin-bottom: 50px;
+  }
+  .add_to_cart {
+    margin-bottom: 65px;
+  }
+  .product_items {
+    gap: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
