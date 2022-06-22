@@ -1421,6 +1421,59 @@ input[type="number"]::-webkit-outer-spin-button {
         margin-bottom: 65px;
     }
 
+    .filter_box_product {
+        display: flex;
+        position: relative;
+    }
+    .filter_box_product summary {
+        outline: none;
+        cursor: pointer;
+    }
+
+    .filter_box_color {
+        display: flex;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6f6e6e;
+    }
+
+    .filter_box_choose-size {
+        display: flex;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6f6e6e;
+        margin-left: 23px;
+        margin-right: 23px;
+    }
+
+    .filter_box_choose-size_content {
+        position: absolute;
+        width: 80px;
+        height: 103px;
+        top: 25px;
+        left: 170px;
+        min-inline-size: -webkit-max-content;
+        min-inline-size: -moz-max-content;
+        min-inline-size: max-content;
+        padding: 9px;
+        z-index: 2;
+        background: #ffffff;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        list-style-type: none;
+    }
+    .filter_box_choose-size_content li {
+        margin: 9px;
+    }
+
+    .filter_box_quantity {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6f6e6e;
+    }
+
     .add_to_cart {
         display: flex;
         justify-content: center;
@@ -1653,14 +1706,23 @@ input[type="number"]::-webkit-outer-spin-button {
         margin-top: 32px;
     }
 
-    .filter_box_trending {
-        width: 146px;
+    .filter_svg {
+        width: 15px;
+        margin-left: 10px;
+    }
+
+    .filter_box_color {
+        width: 103px;
     }
 
     .filter_box_size {
         width: 64px;
         margin-left: 4px;
         margin-right: 4px;
+    }
+
+    .product_info .filter_box_choose-size_content {
+        left: 115px;
     }
 
     .filter_box_price {
@@ -1671,6 +1733,19 @@ input[type="number"]::-webkit-outer-spin-button {
         width: 175px;
         margin-top: 32px;
         margin-bottom: 50px;
+    }
+
+    .product_info .filter_box_color {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .product_info .filter_box_choose-size {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .product_info .filter_box_quantity {
+        font-size: 10px;
+        line-height: 12px;
     }
 
     .add_to_cart {
