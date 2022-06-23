@@ -81,6 +81,9 @@ img {
 .fashion {
     color: #f16d7f;
 }
+.pulvinar {
+    font-style: italic;
+}
 
 .center {
     padding-left: calc(50% - 570px);
@@ -169,9 +172,9 @@ img {
     display: none;
 }
 
-.menu_btn>span,
-.menu_btn>span::before,
-.menu_btn>span::after {
+.menu_btn > span,
+.menu_btn > span::before,
+.menu_btn > span::after {
     display: block;
     position: absolute;
     width: 100%;
@@ -180,26 +183,26 @@ img {
     transition-duration: 0.25s;
 }
 
-.menu_btn>span::before {
+.menu_btn > span::before {
     content: "";
     top: -8px;
 }
 
-.menu_btn>span::after {
+.menu_btn > span::after {
     content: "";
     top: 8px;
 }
 
-.checkbox:checked~.menu_btn>span {
+.checkbox:checked ~ .menu_btn > span {
     transform: rotate(45deg);
 }
 
-.checkbox:checked~.menu_btn>span::before {
+.checkbox:checked ~ .menu_btn > span::before {
     top: 0;
     transform: rotate(0);
 }
 
-.checkbox:checked~.menu_btn>span::after {
+.checkbox:checked ~ .menu_btn > span::after {
     top: 0;
     transform: rotate(90deg);
 }
@@ -262,7 +265,7 @@ img {
     cursor: pointer;
 }
 
-.checkbox:checked~.menu {
+.checkbox:checked ~ .menu {
     transform: translate(0%);
 }
 
@@ -926,7 +929,7 @@ summary::-webkit-details-marker {
     justify-content: space-between;
     min-height: 148px;
     background: #f8f3f4;
-    margin-bottom: 132px;
+    margin-bottom: 64px;
 }
 
 .reg {
@@ -949,13 +952,39 @@ summary::-webkit-details-marker {
     max-width: 360px;
 }
 
+.form_right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 128px;
+}
+
 .label_text {
     width: 360px;
     height: 45px;
+    box-sizing: border-box;
     margin-bottom: 20px;
     border: 1px solid #a4a4a4;
     padding-left: 17px;
     outline: none;
+}
+
+.label_text_pas {
+    width: 360px;
+    height: 45px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    border: 1px solid #a4a4a4;
+    padding-left: 17px;
+    outline: none;
+}
+
+.label_text::placeholder {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #b1b1b1;
 }
 
 .text_form {
@@ -967,18 +996,10 @@ summary::-webkit-details-marker {
     margin-bottom: 20px;
 }
 
-.label_text::placeholder {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 16px;
-    color: #b1b1b1;
-}
-
 .radio_box {
     display: flex;
-    margin-top: 32px;
-    margin-bottom: 35px;
+    margin-top: 12px;
+    margin-bottom: 32px;
 }
 
 .gender {
@@ -989,6 +1010,20 @@ summary::-webkit-details-marker {
     color: #000000;
     margin-left: 10px;
     margin-right: 20px;
+}
+
+.gender_other {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+    margin-left: 10px;
+    margin-right: 20px;
+    visibility: hidden;
+}
+.label_radio_other {
+    visibility: hidden;
 }
 
 .form_info {
@@ -1046,10 +1081,35 @@ summary::-webkit-details-marker {
     font-size: 24px;
     line-height: 29px;
     color: #000000;
+}
+.info_text_box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.info_text_big {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
     margin-bottom: 21px;
 }
 
 /*Страница корзины*/
+
+.shopping_cart {
+    height: 148px;
+    background: #f8f3f4;
+    display: flex;
+    align-items: center;
+}
+.shopping_zag {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #f16d7f;
+}
 
 .cart_content {
     display: grid;
@@ -1174,7 +1234,8 @@ input[type="number"]::-webkit-outer-spin-button {
     display: flex;
     max-width: 652px;
     justify-content: space-around;
-    margin-bottom: 129px;
+    margin-bottom: 128px;
+    margin-top: 32px;
     gap: 192px;
 }
 
@@ -1249,8 +1310,8 @@ input[type="number"]::-webkit-outer-spin-button {
     display: flex;
     position: relative;
     background: #f5f3f3;
-    max-width: 360px;
-    max-height: 214px;
+    width: 360px;
+    height: 214px;
 }
 
 .checkout_but {

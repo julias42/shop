@@ -1,5 +1,4 @@
 @media (max-width: 1024px) {
-
   //Index
   .center {
     padding-left: calc(50% - 368px);
@@ -105,7 +104,7 @@
 
   .cart_content {
     grid-template-columns: repeat(1, 1fr);
-    margin-bottom: 129px;
+    margin-bottom: 147px;
   }
 
   .form_cart {
@@ -115,10 +114,46 @@
 
   .cart_button_box {
     gap: 48px;
+    margin-top: 22px;
+    margin-bottom: 64px;
   }
 
   .cart_card {
     margin: 0;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cart {
+    min-width: 734px;
+  }
+  .form_total {
+    margin-top: 38px;
+  }
+
+  //registration
+  .registration {
+    margin-bottom: 40px;
+  }
+  .form_right {
+    width: 354px;
+    margin-left: 22px;
+  }
+  .info_zag {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .info_text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .info_text_big {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .label_radio_other {
+    visibility: visible;
+  }
+  .gender_other {
+    visibility: visible;
   }
 }

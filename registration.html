@@ -79,13 +79,15 @@
             <input class="label_text" type="text" name="Last_name" placeholder="Last Name">
             <div class="radio_box">
                 <input class="label_radio" type="radio" name="gender">
-                <label class="gender">Male</label>
+                <label for="label_radio" class="gender">Male</label>
                 <input class="label_radio" type="radio" name="gender">
-                <label class="gender">Female</label>
+                <label for="label_radio" class="gender">Female</label>
+                <input class="label_radio_other" type="radio" name="gender">
+                <label for="label_radio" class="gender_other">Other</label>
             </div>
             <label class="text_form">Login details</label>
             <input class="label_text" type="email" name="email" placeholder="Email">
-            <input class="label_text" type="password" name="password" placeholder="Password">
+            <input class="label_text_pas" type="password" name="password" placeholder="Password">
             <p class="form_info">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and
                 lowercase letters</p>
             <a class="join_but" href="#">JOIN NOW <svg width="40" height="10" viewBox="-4 0 17 10" fill="none"
@@ -98,47 +100,59 @@
                         fill="white" />
                 </svg></a>
         </div>
-        <div class="form_info">
+        <div class="form_right">
             <h2 class="info_zag">LOYALTY HAS ITS PERKS</h2>
-            <h3 class="info_text">Get in on the loyalty program where you can earn points and unlock serious perks.
+            <h3 class="info_text_big">Get in on the loyalty program where you can earn points and unlock serious perks.
                 Starting with these as soon as you join:</h3>
-            <p class="info_text"> <svg width="50" height="16" viewBox="0 0 50 16" fill="none"
+            <div class="info_text_box"> <svg width="50" height="16" viewBox="0 0 50 16" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"
                         fill="black" />
-                </svg>15% off welcome offer</p>
-            <p class="info_text"><svg width="50" height="16" viewBox="0 0 50 16" fill="none"
+                </svg>
+                <p class="info_text">15% off welcome offer</p>
+            </div>
+            <div class="info_text_box"><svg width="50" height="16" viewBox="0 0 50 16" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"
                         fill="black" />
-                </svg>Free shipping, returns and exchanges on all orders</p>
-            <p class="info_text"><svg width="50" height="16" viewBox="0 0 50 16" fill="none"
+                </svg>
+                <p class="info_text">Free shipping, returns and exchanges on all orders</p>
+            </div>
+            <div class="info_text_box"><svg width="50" height="16" viewBox="0 0 50 16" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"
                         fill="black" />
-                </svg>$10 off a purchase on your birthday</p>
-            <p class="info_text"><svg width="50" height="16" viewBox="0 0 50 16" fill="none"
+                </svg>
+                <p class="info_text">$10 off a purchase on your birthday</p>
+            </div>
+            <div class="info_text_box"><svg width="50" height="16" viewBox="0 0 50 16" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"
                         fill="black" />
-                </svg>Early access to products</p>
-            <p class="info_text"><svg width="50" height="16" viewBox="0 0 50 16" fill="none"
+                </svg>
+                <p class="info_text">Early access to products</p>
+            </div>
+            <div class="info_text_box"><svg width="50" height="16" viewBox="0 0 50 16" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"
                         fill="black" />
-                </svg>Exclusive offers & rewards</p>
+                </svg>
+                <p class="info_text">Exclusive offers & rewards</p>
+            </div>
         </div>
     </div>
     <footer class="center_footer center">
         <div class="center_footer_content_left">
             <img src="img/fotocontentleft.png" alt="photo">
-            <p class="center_footer_text_left">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
-                condimentum“</p>
+            <p class="center_footer_text_left">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,<span
+                    class="pulvinar"> a pulvinar
+                    purus
+                    condimentum“</span></p>
         </div>
         <div class="center_footer_content_right">
             <h2 class="center_footer_content_zag">SUBSCRIBE</h2>
@@ -152,12 +166,13 @@
     <footer class="footer_bottom center">
         <div class="all_rights">© 2022 Brand All Rights Reserved.</div>
         <div class="links_box">
-            <a class="link" href="#"><svg width="9" height="15" viewBox="0 0 9 15" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
+            <a class="link" href="#">
+                <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M8.08836 8.28L8.50686 5.61602H5.89022V3.88729C5.89022 3.15847 6.25574 2.44806 7.42765 2.44806H8.61722V0.179975C8.61722 0.179975 7.53772 0 6.50561 0C4.35073 0 2.9422 1.27593 2.9422 3.5857V5.61602H0.546875V8.28H2.9422V14.72H5.89022V8.28H8.08836Z"
                         fill="black" />
-                </svg></a>
+                </svg>
+            </a>
             <a class="link" href="#"><svg width="16" height="15" viewBox="0 0 16 15" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
