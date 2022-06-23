@@ -179,7 +179,32 @@
     gap: 0;
   }
 
+  //registration
+  .registration {
+    justify-content: center;
+  }
+
+  .main_form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form_right {
+    margin: 0;
+  }
+  .join_but {
+    margin-bottom: 40px;
+  }
+  .form_right {
+    margin-bottom: 100px;
+  }
+
   //cart
+  .shopping_cart {
+    justify-content: center;
+  }
+  .cart_content {
+    margin-top: 39px;
+  }
 }
 @media (max-width: 525px) {
   .center {
