@@ -15,7 +15,7 @@
 <body>
     <header class="header center">
         <div class="header_left">
-            <a href="index.html"><img src="img/logo.png"></a>
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
             <div class="header_search">
                 <input class="search" type="text" placeholder="What're we looking for ?">
                 <input class="search_submit" type="submit">
@@ -44,19 +44,22 @@
                     </a>
                 </div>
                 <span class="menu_text">MENU</span>
-                <ul><a href="#">Man</a>
+                <ul>
+                    <li><a href="#">Man</a></li>
                     <li class="menu_list"><a class="menu_link" href="#">Accessories</a></li>
                     <li class="menu_list"><a class="menu_link" href="#">Bags</a></li>
                     <li class="menu_list"><a class="menu_link" href="#">Denim</a></li>
                     <li class="menu_list"><a class="menu_link" href="#">T-Shirts</a></li>
                 </ul>
-                <ul><a href="product.html">Woman</a>
+                <ul>
+                    <li><a href="product.html">Woman</a></li>
                     <li class="menu_list"><a class="menu_link" href="#">Accessories</a></li>
                     <li class="menu_list"><a class="menu_link" href="#">Jackets & Coats</a></li>
                     <li class="menu_list"><a class="menu_link" href="#">Polos</a></li>
                     <li class="menu_list"><a class="menu_link" href="#">T-Shirts</a></li>
                 </ul>
-                <ul><a href="#">Kids</a>
+                <ul>
+                    <li><a href="#">Kids</a></li>
                     <li class="menu_list"><a class="menu_link" href="#">Accessories</a></li>
                     <li class="menu_list"><a class="menu_link" href="#">Jackets & Coats</a></li>
                     <li class="menu_list"><a class="menu_link" href="#">Polos</a></li>
@@ -65,7 +68,7 @@
                     <li class="menu_list"><a class="menu_link" href="#">Bags</a></li>
                 </ul>
             </div>
-            <a class="header_link" href="registration.html"><img src="img/login.svg"></a>
+            <a class="header_link" href="registration.html"><img src="img/login.svg" alt="login"></a>
             <a class="header_link" href="cart.html"><img src="img/cart.svg" alt="cart"></a>
         </div>
     </header>
@@ -82,47 +85,37 @@
     <nav class="navbar center">
         <div class="filter_box">
             <div class="filter_mobile"></div>
-            <details>
-                <summary class="main_s">FILTER <svg width="35" height="10" viewBox="0 0 15 10" fill="none"
+            <details class="filter_content">
+                <summary class="main_s">FILTER<svg width="35" height="10" viewBox="0 0 15 10" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"
                             fill="black" />
-                    </svg>
-                </summary>
-                <div class="filter_content">
-                    <li class="filter_zag">FILTER<svg width="35" height="10" viewBox="0 0 15 10" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"
-                                fill="#EF5B70" />
-                        </svg>
-                    </li>
-                    <details open>
-                        <summary class="filter_but">CATEGORY</summary>
-                        <li><a class="filter_link" href="#">Accessories</a></li>
-                        <li><a class="filter_link" href="#">Bags</a></li>
-                        <li><a class="filter_link" href="#">Denim</a></li>
-                        <li><a class="filter_link" href="#">Hoodies & Sweatshirts</a></li>
-                        <li><a class="filter_link" href="#">Jackets & Coats</a></li>
-                        <li><a class="filter_link" href="#">Polos</a></li>
-                        <li><a class="filter_link" href="#">Shirts</a></li>
-                        <li><a class="filter_link" href="#">Shoes</a></li>
-                        <li><a class="filter_link" href="#">Sweaters & Knits</a></li>
-                        <li><a class="filter_link" href="#">T-Shirts</a></li>
-                        <li><a class="filter_link" href="#">Tanks</a></li>
-                    </details>
-                    <details>
-                        <summary class="filter_but">BRAND</summary>
-                        <li><a class="filter_link" href="#">Hoodies & Sweatshirts</a></li>
-                        <li><a class="filter_link" href="#">Jackets & Coats</a></li>
-                    </details>
-                    <details>
-                        <summary class="filter_but">DESIGNER</summary>
-                        <li><a class="filter_link" href="#">Accessories</a></li>
-                        <li><a class="filter_link" href="#">Bags</a></li>
-                    </details>
-                </div>
+                    </svg></summary>
+                <details class="filter_category" open>
+                    <summary class="filter_but">CATEGORY</summary>
+                    <a class="filter_link" href="#">Accessories</a>
+                    <a class="filter_link" href="#">Bags</a>
+                    <a class="filter_link" href="#">Denim</a>
+                    <a class="filter_link" href="#">Hoodies & Sweatshirts</a>
+                    <a class="filter_link" href="#">Jackets & Coats</a>
+                    <a class="filter_link" href="#">Polos</a>
+                    <a class="filter_link" href="#">Shirts</a>
+                    <a class="filter_link" href="#">Shoes</a>
+                    <a class="filter_link" href="#">Sweaters & Knits</a>
+                    <a class="filter_link" href="#">T-Shirts</a>
+                    <a class="filter_link" href="#">Tanks</a>
+                </details>
+                <details class="filter_category">
+                    <summary class="filter_but">BRAND</summary>
+                    <a class="filter_link" href="#">Hoodies & Sweatshirts</a>
+                    <a class="filter_link" href="#">Jackets & Coats</a>
+                </details>
+                <details class="filter_category">
+                    <summary class="filter_but">DESIGNER</summary>
+                    <a class="filter_link" href="#">Accessories</a>
+                    <a class="filter_link" href="#">Bags</a>
+                </details>
             </details>
         </div>
         <div class="filter_box_center">
@@ -149,10 +142,14 @@
                         </svg>
                     </summary>
                     <div class="filter_box_size_content">
-                        <li><input class="size_checkbox" type="checkbox">XS</li>
-                        <li><input class="size_checkbox" type="checkbox">S</li>
-                        <li><input class="size_checkbox" type="checkbox">M</li>
-                        <li><input class="size_checkbox" type="checkbox">L</li>
+                        <input class="size_checkbox" type="checkbox" value="size">
+                        <label for="size">XS</label>
+                        <input class="size_checkbox" type="checkbox">
+                        <label for="size_checkbox">S</label>
+                        <input class="size_checkbox" type="checkbox">
+                        <label for="size_checkbox">M</label>
+                        <input class="size_checkbox" type="checkbox">
+                        <label for="size_checkbox">L</label>
                     </div>
                 </details>
             </div>

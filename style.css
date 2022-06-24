@@ -891,9 +891,8 @@ summary::-webkit-details-marker {
   outline: none;
 }
 
-.filter_box .filter_content {
+.filter_box .filter_content[open] {
   position: absolute;
-  top: 0px;
   padding: 16px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -908,39 +907,41 @@ summary::-webkit-details-marker {
   z-index: 2;
 }
 
-.filter_content details[open] {
-  color: #ef5b70;
+.filter_box .filter_content[open] .main_s {
+  color: #f16d7f;
+  margin-bottom: 24px;
 }
 
-.filter_box details[open] .main_s::before {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  content: "";
-  cursor: default;
+.filter_box .filter_content[open] path {
+  fill: #f16d7f;
 }
 
-.filter_box li {
-  list-style-type: none;
-  margin: 11px;
+.filter_box .filter_but[open] {
+  color: #f16d7f;
 }
 
-.filter_link {
+.filter_box .filter_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #6f6e6e;
+  margin: 11px;
   margin-left: 33px;
 }
 
-.filter_link:hover {
+.filter_box .filter_link:hover {
   color: #ef5b70;
 }
 
-.filter_zag {
+.filter_box .filter_zag {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -948,7 +949,7 @@ summary::-webkit-details-marker {
   color: #ef5b70;
 }
 
-.filter_but {
+.filter_box .filter_but {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -956,10 +957,16 @@ summary::-webkit-details-marker {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
+  color: #6f6e6e;
   padding: 11px;
   border-left: 5px solid #ef5b70;
   border-bottom: 1px solid #ebebeb;
   outline: none;
+  margin-bottom: 18px;
+}
+
+.filter_box .filter_category[open] .filter_but {
+  color: #ef5b70;
 }
 
 .filter_box_center {
@@ -2210,6 +2217,9 @@ input[type="number"]::-webkit-outer-spin-button {
   }
   .filter_box .filter_content {
     min-width: 345px;
+  }
+  .filter_box_size .filer_box_size_content {
+    left: 154px;
   }
   .product_items {
     -ms-grid-columns: (1fr)[1];

@@ -75,27 +75,35 @@
     margin-bottom: 9px;
     margin-left: 0;
   }
+
   //catalog
+
   .arrivals {
     flex-direction: column;
   }
+
   .new_arr {
     margin-top: 24px;
     margin-bottom: 32px;
   }
+
   .breadcrumb {
     margin-bottom: 46px;
   }
+
   .navbar {
     grid-template-columns: 0px 324px;
   }
+
   .filter_box_size {
     width: 64px;
     margin: 0;
   }
+
   .main_s {
     opacity: 0;
   }
+
   .filter_mobile {
     display: flex;
     position: absolute;
@@ -104,9 +112,15 @@
     background-image: url(img/filter_mobile.svg);
     background-repeat: no-repeat;
   }
+
   .filter_box .filter_content {
     min-width: 345px;
   }
+
+  .filter_box_size .filer_box_size_content {
+    left: 154px;
+  }
+
   .product_items {
     grid-template-columns: repeat(1, 1fr);
   }
