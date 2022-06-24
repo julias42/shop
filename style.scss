@@ -1130,8 +1130,8 @@ summary::-webkit-details-marker {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    min-width: 652px;
-    min-height: 306px;
+    width: 652px;
+    height: 306px;
     margin-bottom: 40px;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     -webkit-transition: all 0.5s ease-out;
@@ -1235,7 +1235,6 @@ input[type="number"]::-webkit-outer-spin-button {
     max-width: 652px;
     justify-content: space-around;
     margin-bottom: 128px;
-    margin-top: 32px;
     gap: 192px;
 }
 
@@ -1243,6 +1242,7 @@ input[type="number"]::-webkit-outer-spin-button {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -1255,7 +1255,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .form_cart {
     display: grid;
-    height: 272px;
+    align-content: flex-start;
     gap: 75px;
 }
 
@@ -1263,6 +1263,7 @@ input[type="number"]::-webkit-outer-spin-button {
     display: flex;
     flex-direction: column;
     max-height: 272px;
+    min-width: 360px;
 }
 
 .cart_form_text {
