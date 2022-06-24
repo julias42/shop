@@ -1007,6 +1007,14 @@ summary::-webkit-details-marker {
 
 .filter_box_size .filter_box_size_content {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 6px;
   width: 80px;
   height: 103px;
   top: 25px;
@@ -1019,11 +1027,6 @@ summary::-webkit-details-marker {
   background: #ffffff;
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-}
-
-.filter_box_size li {
-  list-style-type: none;
-  margin: 9px;
 }
 
 .size_checkbox {
