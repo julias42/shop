@@ -113,8 +113,8 @@
     background-repeat: no-repeat;
   }
 
-  .filter_box .filter_content {
-    min-width: 345px;
+  .filter_box .filter_content[open] {
+    min-width: 343px;
   }
 
   .filter_box_size .filer_box_size_content {

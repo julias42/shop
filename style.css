@@ -2215,8 +2215,8 @@ input[type="number"]::-webkit-outer-spin-button {
     background-image: url(img/filter_mobile.svg);
     background-repeat: no-repeat;
   }
-  .filter_box .filter_content {
-    min-width: 345px;
+  .filter_box .filter_content[open] {
+    min-width: 343px;
   }
   .filter_box_size .filer_box_size_content {
     left: 154px;
