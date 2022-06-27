@@ -55,6 +55,70 @@
         opacity: 1;
     }
 }
+@-webkit-keyframes scale-in-tl {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        -webkit-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        opacity: 1;
+    }
+}
+@keyframes scale-in-tl {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        -webkit-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes scale-in-ver-top {
+    0% {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+}
+@keyframes scale-in-ver-top {
+    0% {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+}
 
 * {
     margin: 0;
@@ -748,6 +812,7 @@ summary::-webkit-details-marker {
     position: relative;
     cursor: pointer;
     max-width: 85px;
+    max-height: 17px;
 
     .main_s {
         list-style: none;
@@ -769,6 +834,8 @@ summary::-webkit-details-marker {
         min-height: 190px;
         min-width: 360px;
         z-index: 2;
+        -webkit-animation: scale-in-tl 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        animation: scale-in-tl 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
         .main_s {
             color: #f16d7f;
             margin-bottom: 24px;
@@ -776,6 +843,15 @@ summary::-webkit-details-marker {
         path {
             fill: #f16d7f;
         }
+    }
+
+    .filter_content[open]::before {
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        cursor: pointer;
     }
 
     .filter_but[open] {
@@ -819,8 +895,18 @@ summary::-webkit-details-marker {
         outline: none;
         margin-bottom: 18px;
     }
+
+    .filter_category {
+        transition: min-height 0.15s linear, max-height 0.5s linear;
+    }
     .filter_category[open] .filter_but {
         color: #ef5b70;
+    }
+    .filter_mobile {
+        display: none;
+    }
+    .filter_mobile-open {
+        display: none;
     }
 }
 
@@ -1368,6 +1454,7 @@ input[type="number"]::-webkit-outer-spin-button {
     left: 43px;
     display: flex;
     min-width: 273px;
+    background: #e2e2e2;
 }
 
 /*Страница продукты*/

@@ -105,12 +105,16 @@
   }
 
   .filter_mobile {
-    display: flex;
+    display: block !important;
     position: absolute;
     width: 30px;
     height: 30px;
-    background-image: url(img/filter_mobile.svg);
-    background-repeat: no-repeat;
+  }
+  .filter_mobile-open {
+    display: block !important;
+    position: absolute;
+    top: 15px;
+    left: 15px;
   }
 
   .filter_box .filter_content[open] {
