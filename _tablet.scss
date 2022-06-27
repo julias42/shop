@@ -114,7 +114,6 @@
 
   .cart_button_box {
     gap: 48px;
-    margin-top: 22px;
     margin-bottom: 64px;
   }
 
@@ -124,8 +123,9 @@
     align-items: center;
   }
   .cart {
-    min-width: 734px;
+    width: 734px;
   }
+
   .form_total {
     margin-top: 38px;
   }
