@@ -55,6 +55,7 @@
         opacity: 1;
     }
 }
+
 @-webkit-keyframes scale-in-tl {
     0% {
         -webkit-transform: scale(0);
@@ -63,6 +64,7 @@
         transform-origin: 0% 0%;
         opacity: 1;
     }
+
     100% {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -71,6 +73,7 @@
         opacity: 1;
     }
 }
+
 @keyframes scale-in-tl {
     0% {
         -webkit-transform: scale(0);
@@ -79,6 +82,7 @@
         transform-origin: 0% 0%;
         opacity: 1;
     }
+
     100% {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -87,6 +91,7 @@
         opacity: 1;
     }
 }
+
 @-webkit-keyframes scale-in-ver-top {
     0% {
         -webkit-transform: scaleY(0);
@@ -95,6 +100,7 @@
         transform-origin: 100% 0%;
         opacity: 1;
     }
+
     100% {
         -webkit-transform: scaleY(1);
         transform: scaleY(1);
@@ -103,6 +109,7 @@
         opacity: 1;
     }
 }
+
 @keyframes scale-in-ver-top {
     0% {
         -webkit-transform: scaleY(0);
@@ -111,6 +118,7 @@
         transform-origin: 100% 0%;
         opacity: 1;
     }
+
     100% {
         -webkit-transform: scaleY(1);
         transform: scaleY(1);
@@ -145,6 +153,7 @@ img {
 .fashion {
     color: #f16d7f;
 }
+
 .pulvinar {
     font-style: italic;
 }
@@ -236,9 +245,9 @@ img {
     display: none;
 }
 
-.menu_btn > span,
-.menu_btn > span::before,
-.menu_btn > span::after {
+.menu_btn>span,
+.menu_btn>span::before,
+.menu_btn>span::after {
     display: block;
     position: absolute;
     width: 100%;
@@ -247,26 +256,26 @@ img {
     transition-duration: 0.25s;
 }
 
-.menu_btn > span::before {
+.menu_btn>span::before {
     content: "";
     top: -8px;
 }
 
-.menu_btn > span::after {
+.menu_btn>span::after {
     content: "";
     top: 8px;
 }
 
-.checkbox:checked ~ .menu_btn > span {
+.checkbox:checked~.menu_btn>span {
     transform: rotate(45deg);
 }
 
-.checkbox:checked ~ .menu_btn > span::before {
+.checkbox:checked~.menu_btn>span::before {
     top: 0;
     transform: rotate(0);
 }
 
-.checkbox:checked ~ .menu_btn > span::after {
+.checkbox:checked~.menu_btn>span::after {
     top: 0;
     transform: rotate(90deg);
 }
@@ -329,7 +338,7 @@ img {
     cursor: pointer;
 }
 
-.checkbox:checked ~ .menu {
+.checkbox:checked~.menu {
     transform: translate(0%);
 }
 
@@ -836,10 +845,12 @@ summary::-webkit-details-marker {
         z-index: 2;
         -webkit-animation: scale-in-tl 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
         animation: scale-in-tl 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
         .main_s {
             color: #f16d7f;
             margin-bottom: 24px;
         }
+
         path {
             fill: #f16d7f;
         }
@@ -899,12 +910,15 @@ summary::-webkit-details-marker {
     .filter_category {
         transition: min-height 0.15s linear, max-height 0.5s linear;
     }
+
     .filter_category[open] .filter_but {
         color: #ef5b70;
     }
+
     .filter_mobile {
         display: none;
     }
+
     .filter_mobile-open {
         display: none;
     }
@@ -1105,6 +1119,7 @@ summary::-webkit-details-marker {
     margin-right: 20px;
     visibility: hidden;
 }
+
 .label_radio_other {
     visibility: hidden;
 }
@@ -1165,11 +1180,13 @@ summary::-webkit-details-marker {
     line-height: 29px;
     color: #000000;
 }
+
 .info_text_box {
     display: flex;
     align-items: center;
     margin-bottom: 16px;
 }
+
 .info_text_big {
     font-style: normal;
     font-weight: 300;
@@ -1187,6 +1204,7 @@ summary::-webkit-details-marker {
     display: flex;
     align-items: center;
 }
+
 .shopping_zag {
     font-weight: 400;
     font-size: 24px;
@@ -1222,6 +1240,20 @@ summary::-webkit-details-marker {
     -ms-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
+}
+
+.cart_none {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    visibility: hidden;
+    font-style: normal;
+    width: 100%;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #222222;
 }
 
 .cart:hover {

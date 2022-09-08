@@ -1476,6 +1476,26 @@ summary::-webkit-details-marker {
   transition: all 0.5s ease-out;
 }
 
+.cart_none {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  visibility: hidden;
+  font-style: normal;
+  width: 100%;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+}
+
 .cart:hover {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
@@ -2158,6 +2178,9 @@ input[type="number"]::-webkit-outer-spin-button {
   .cart {
     width: 734px;
   }
+  .cart_none {
+    padding-bottom: 85px;
+  }
   .form_total {
     margin-top: 38px;
   }
@@ -2436,6 +2459,9 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 358px;
     height: 188px;
     margin-bottom: 32px;
+  }
+  .cart_none {
+    padding-bottom: 55px;
   }
   .cart img {
     width: 40%;

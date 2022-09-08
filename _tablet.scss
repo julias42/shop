@@ -1,4 +1,5 @@
 @media (max-width: 1024px) {
+
   //Index
   .center {
     padding-left: calc(50% - 368px);
@@ -122,8 +123,13 @@
     flex-direction: column;
     align-items: center;
   }
+
   .cart {
     width: 734px;
+  }
+
+  .cart_none {
+    padding-bottom: 85px;
   }
 
   .form_total {
@@ -134,26 +140,32 @@
   .registration {
     margin-bottom: 40px;
   }
+
   .form_right {
     width: 354px;
     margin-left: 22px;
   }
+
   .info_zag {
     font-size: 16px;
     line-height: 19px;
     margin-bottom: 32px;
   }
+
   .info_text {
     font-size: 16px;
     line-height: 19px;
   }
+
   .info_text_big {
     font-size: 16px;
     line-height: 19px;
   }
+
   .label_radio_other {
     visibility: visible;
   }
+
   .gender_other {
     visibility: visible;
   }
