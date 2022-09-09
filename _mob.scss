@@ -12,6 +12,25 @@
     width: 100%;
   }
 
+  .circle_cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 88px;
+    right: 76px;
+    clip-path: circle(50%);
+    height: 19px;
+    width: 19px;
+    background: #F16D7F;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    z-index: 2;
+  }
+
   .menu_mobile_link {
     display: flex;
     justify-content: space-around;
@@ -19,6 +38,11 @@
     background-color: #e8e8e8;
     border-radius: 10px;
     margin-bottom: 24px;
+  }
+
+  .mobile_link {
+    display: flex;
+    position: relative;
   }
 
   .sale {
