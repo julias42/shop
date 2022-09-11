@@ -400,6 +400,46 @@ img {
   z-index: 2;
 }
 
+.rightHeader {
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.basket {
+  position: absolute;
+  z-index: 4;
+  right: 0;
+  top: 37px;
+  background: white;
+  padding: 10px;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.basketRow {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 10px;
+}
+
+.basketHeader {
+  font-weight: bold;
+}
+
+.basketTotal {
+  font-weight: bold;
+  text-align: right;
+}
+
 .top_content {
   background-color: #f1e4e6;
   padding-left: calc(50% - 800px);
@@ -2277,6 +2317,10 @@ input[type="number"]::-webkit-outer-spin-button {
     color: #FFFFFF;
     z-index: 2;
   }
+  .basket {
+    font-size: 16px;
+    width: 500px;
+  }
   .menu_mobile_link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2573,7 +2617,7 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 }
 
-@media (max-width: 525px) {
+@media (max-width: 767px) and (max-width: 525px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
