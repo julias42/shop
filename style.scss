@@ -343,6 +343,10 @@ img {
     transform: translate(0%);
 }
 
+.checkbox:checked~.circle_cart_mobile_heading {
+    display: none;
+}
+
 .circle_cart {
     display: flex;
     justify-content: center;
